@@ -77,6 +77,6 @@ public class Tutorial {
   public String toString() {
     return "Tutorial [id=" + id + ", title=" + title + ", description=" + description + ", level=" + level
         + ", published=" + published + "]";
-  }
+  } 
 
 }
