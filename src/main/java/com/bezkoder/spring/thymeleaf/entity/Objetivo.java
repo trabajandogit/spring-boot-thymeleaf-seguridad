@@ -22,7 +22,7 @@ public class Objetivo {
 	@EmbeddedId
     private ObjetivoPK id;	
 
-	@Column(length = 70, nullable = false)
+	@Column(length = 150, nullable = false)
 	private String titulo;
 
     @ManyToOne(optional = false)
@@ -36,6 +36,13 @@ public class Objetivo {
 	
 	public Objetivo () {
 	}
+	
+	public Objetivo (int dominio,int orden,String titulo ) {
+		this.id = new ObjetivoPK();
+		this.id.setIddominio(dominio);
+		this.id.setOrdenobjetivo(orden);
+		this.setTitulo(titulo);
+	}	
 	
 	public ObjetivoPK getId() {
 		return id;
@@ -65,7 +72,7 @@ public class Objetivo {
 	@Override
 	public String toString() {
 		return "Objetivo [iddominio=" + id.getIddominio() + ", ordenobjetivo=" + id.getOrdenobjetivo() + ", titulo=" + titulo
-				+ ", dominio=" + dominio + "]";
+				+ "]";
 	}
 	
 

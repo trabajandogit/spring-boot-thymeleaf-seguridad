@@ -18,7 +18,7 @@ public class Control {
 	@EmbeddedId
 	private ControlPK id;
 	
-	@Column(length = 70, nullable = false)
+	@Column(length = 150, nullable = false)
 	private String titulo;
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
@@ -30,6 +30,14 @@ public class Control {
 	public Control() {
 	}
 
+	public Control(int dominio, int orden, int control, String titulo) {
+		this.id=new ControlPK();
+		this.id.setIddominio(dominio);
+		this.id.setOrdenobjetivo(orden);
+		this.id.setControl(control);
+		this.titulo=titulo;
+	}
+	
 	public ControlPK getId() {
 		return id;
 	}
@@ -56,7 +64,7 @@ public class Control {
 
 	@Override
 	public String toString() {
-		return "Control [id=" + id + ", titulo=" + titulo + ", objetivo=" + objetivo + "]";
+		return "Control [id=" + id + ", titulo=" + titulo + "]";
 	}
 	
 }

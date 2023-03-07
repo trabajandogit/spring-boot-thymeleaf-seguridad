@@ -17,7 +17,7 @@ public class Dominio {
 	@Id
 	private Integer iddominio;
 
-	@Column(length = 70, nullable = false)
+	@Column(length = 150, nullable = false)
 	private String titulo;
 	
 	@OneToMany(mappedBy = "dominio", cascade = CascadeType.ALL, orphanRemoval = true)
