@@ -1,0 +1,35 @@
+5,1,Directrices de la Dirección en seguridad de la información
+6,1,Organización interna
+6,2,Dispositivos para movilidad y teletrabajo
+7,1,Antes de la contratación
+7,2,Durante la contratación
+7,3,Cese o cambio de puesto de trabajo
+8,1,Responsabilidad sobre los activos
+8,2,Clasificación de la información
+8,3,Manejo de los soportes de almacenamiento
+9,1,Requisitos de negocio para el control de accesos
+9,2,Gestión de acceso de usuario
+9,3,Responsabilidades del usuario
+9,4,Control de acceso a sistemas y aplicaciones
+10,1,Controles criptográficos
+11,1,Áreas seguras
+11,2,Seguridad de los equipos
+12,1,Responsabilidades y procedimientos de operación
+12,2,Protección contra código malicioso
+12,3,Copias de seguridad
+12,4,Registro de actividad y supervisión
+12,5,Control del software en explotación
+12,6,Gestión de la vulnerabilidad técnica
+12,7,Consideraciones de las auditorías de los sistemas de información
+13,1,Gestión de la seguridad en las redes
+13,2,Intercambio de información con partes externas
+14,1,Requisitos de seguridad de los sistemas de información
+14,2,Seguridad en los procesos de desarrollo y soporte
+14,3,Datos de prueba
+15,1,Seguridad de la información en las relaciones con suministradores
+15,2,Gestión de la prestación del servicio por suministradores
+16,1,Gestión de incidentes de seguridad de la información y mejoras
+17,1,Continuidad de la seguridad de la información
+17,2,Redundancias
+18,1,Cumplimiento de los requisitos legales y contractuales
+18,2,Revisiones de la seguridad de la información
