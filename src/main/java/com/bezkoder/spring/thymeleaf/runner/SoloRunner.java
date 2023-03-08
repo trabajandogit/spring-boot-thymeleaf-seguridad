@@ -31,12 +31,11 @@ public class SoloRunner implements CommandLineRunner {
     @Autowired
     private ControlRepository controlRepository;
 
-    @Bean
-    RestTemplate getresttemplate() {
-        return new RestTemplate();
-    }
+    //@Bean
+    //RestTemplate getresttemplate() {
+    //    return new RestTemplate();
+    //}
 
-    
     @Override
     public void run(String... args) throws Exception {
     	try {
@@ -87,10 +86,9 @@ public class SoloRunner implements CommandLineRunner {
         logger.info("# Dominios encontrados: {}", dominioRepository.count());
         logger.info("------------------------");
         logger.info("Probar Servicio Rest");
-        ResponseEntity<Dominio[]>  mov = RestTemplate.getForEntity(
-                "http://localhost:8080/api/dominios/",
-                Dominio[].class);
-        List<ResponseEntity<Dominio[]>> m = Arrays.asList(mov);
-        logger.info(m.toString());
+        String url="http://localhost:8080/api/dominios/";
+        RestTemplate restTemplate = new RestTemplate();
+        Object dominios = restTemplate.getForObject(url, Object[].class);
+        logger.info("Respuesta Rest Exitosa: "+ Arrays.asList(dominios).toString());
     }
 }
